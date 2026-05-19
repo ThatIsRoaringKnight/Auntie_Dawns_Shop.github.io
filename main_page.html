@@ -2,10 +2,35 @@
 <html>
   <head>
     <title>Dawn's Shop</title>
+    <style>
+    section.container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 225px;
+      height: 225px;
+      border: 1px color:rgb(0,0,0);
+  }
+      .moreContainer {
+        position: relative;
+        width: 225px;
+        hight: 225px;
+        border: 1px color:rgb(255,0,0)
+      }
+      .imOnTopOfTheLawAndBecauseImRight {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 45px;
+      }
+    </style>
     </head>
   <body>
     <h1>Welcome to Dawn's Shop</h1>
     <p>This is the Main-Page.</p>
-    <a href="images/Shopping_Cart.png" alt="Go to the Shopping Cart" width="25px" hight="25px">
+    <div class="moreContainer">
+      <button type="button">
+        <img src="Shopping_Cart.png" class="imOnTopOfTheLawAndBecauseImRight" alt="Go to the Cart">
+      </button>
+    </div>
   </body>
 </html>
